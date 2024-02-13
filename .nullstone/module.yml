@@ -1,0 +1,13 @@
+org_name: nullstone
+name: aws-ecs-gpu-cluster
+friendly_name: ECS GPU Cluster
+description: Creates an ECS cluster backed by an EC2 Auto-scaling group using GPU instances
+category: cluster
+subcategory: ""
+provider_types:
+    - aws
+platform: ecs
+subplatform: ec2
+type: ""
+appCategories: []
+is_public: true
