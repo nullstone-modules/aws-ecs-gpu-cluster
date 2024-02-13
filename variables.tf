@@ -75,10 +75,11 @@ EOF
 
 variable "node_instance_type" {
   type        = string
-  default     = "m6a.large"
+  default     = "g5.xlarge"
   description = <<EOF
 The instance type of the nodes launched with container workloads on them.
-See https://aws.amazon.com/ec2/instance-types/ for a list of instance types.
+AWS supports 2 categories (`p`, `g`) of instance types running GPUs.
+Look for "Accelerated Computing on the list of instance types: https://aws.amazon.com/ec2/instance-types/.
 EOF
 }
 
