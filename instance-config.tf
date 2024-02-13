@@ -7,6 +7,7 @@ locals {
   user_data = join("\n", [
     "#!/bin/bash",
     "echo ECS_CLUSTER=${aws_ecs_cluster.this.name} >> /etc/ecs/ecs.config",
+    "echo ECS_ENABLE_GPU_SUPPORT=true >> /etc/ecs/ecs.config",
   ])
 }
 
